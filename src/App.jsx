@@ -10,7 +10,7 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState('');
   const [maxLength, setMaxLength] = useState('');
-
+  const [flip, setFlip] = useState(true)
   useEffect(() => {
   
 
@@ -21,17 +21,18 @@ function App() {
 
   }, [search, maxLength]);
 
-  
 
   return (
     <>
     
       {/* Header Bar for Searching */}
-      <SearchBar 
+      <SearchBar
         search={search} 
         setSearch={setSearch} 
         maxLength={maxLength} 
         setMaxLength={setMaxLength}
+        flip={flip}
+        setFlip={setFlip}
       />
       {/* Output the Movies */}
       <Movies movies={movies} />
