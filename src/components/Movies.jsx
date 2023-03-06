@@ -1,5 +1,5 @@
-const Movies = ({ movies }) => {
-    
+const Movies = ({ movies, flip, setFlip }) => {
+    flip ? movies.sort((a,b) => a.length - b.length) : movies.sort((a,b) => b.length - a.length)
     return (<table>
         <thead>
             <tr>

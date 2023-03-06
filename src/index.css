@@ -67,3 +67,8 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.flipButton{
+  max-height: 30px;
+  font-size: .8em;
+}

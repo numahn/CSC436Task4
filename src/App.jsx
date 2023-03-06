@@ -35,7 +35,7 @@ function App() {
         setFlip={setFlip}
       />
       {/* Output the Movies */}
-      <Movies movies={movies} />
+      <Movies movies={movies} flip={flip} setFlip={setFlip}/>
     </>
   )
 }

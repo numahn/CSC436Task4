@@ -19,7 +19,7 @@ const SearchBar = ({search, setSearch, maxLength, setMaxLength, flip, setFlip}) 
         <input type="text" name="search" onChange={searchHandler} value={search} />
         <label htmlFor="max-length">Max Length</label>
         <input type="number" name="max-length" onChange={maxLengthHandler} value={maxLength} />
-        <button onClick={() => handleEvent()}>Flip</button>
+        <button className="flipButton" onClick={() => handleEvent()}>Flip</button>
     </>
 }
 
